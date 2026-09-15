@@ -1,0 +1,15 @@
+{
+  "auth_mode": "no_auth",
+  "primary": {
+    "issuer": "",
+    "audience": "",
+    "jwks_url": "",
+    "algorithms": []
+  },
+  "partner": {
+    "issuer": "",
+    "audience": "",
+    "jwks_url": "",
+    "algorithms": []
+  }
+}

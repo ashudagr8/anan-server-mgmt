@@ -1,0 +1,134 @@
+{
+  "clients": {},
+  "registered_commands": {
+    "hostname": {
+      "description": "Print system hostname.",
+      "aliases": [
+        "hostname"
+      ],
+      "binary": "/usr/bin/hostname",
+      "fixed_args": [],
+      "allow_extra_args": false,
+      "examples": [
+        "show the hostname"
+      ]
+    },
+    "date_now": {
+      "description": "Print the current system date and time.",
+      "aliases": [
+        "date",
+        "current date",
+        "current time"
+      ],
+      "binary": "/usr/bin/date",
+      "fixed_args": [],
+      "allow_extra_args": false,
+      "examples": [
+        "what time is it on the server"
+      ]
+    },
+    "uptime": {
+      "description": "Tell how long the system has been running.",
+      "aliases": [
+        "uptime",
+        "system uptime"
+      ],
+      "binary": "/usr/bin/uptime",
+      "fixed_args": [],
+      "allow_extra_args": false,
+      "examples": [
+        "show uptime"
+      ]
+    },
+    "disk_usage": {
+      "description": "Report file system disk space usage.",
+      "aliases": [
+        "df",
+        "disk usage",
+        "filesystem usage"
+      ],
+      "binary": "/usr/bin/df",
+      "fixed_args": [
+        "-h"
+      ],
+      "allow_extra_args": false,
+      "examples": [
+        "show disk usage"
+      ]
+    },
+    "memory_usage": {
+      "description": "Display the amount of free and used memory.",
+      "aliases": [
+        "free",
+        "memory usage",
+        "ram usage"
+      ],
+      "binary": "/usr/bin/free",
+      "fixed_args": [
+        "-h"
+      ],
+      "allow_extra_args": false,
+      "examples": [
+        "show memory usage"
+      ]
+    },
+    "process_list": {
+      "description": "Report a snapshot of current processes.",
+      "aliases": [
+        "ps",
+        "processes",
+        "running processes"
+      ],
+      "binary": "/usr/bin/ps",
+      "fixed_args": [
+        "aux"
+      ],
+      "allow_extra_args": false,
+      "examples": [
+        "list running processes"
+      ]
+    },
+    "check_updates": {
+      "description": "Check for pending package upgrades on Ubuntu/Debian systems",
+      "aliases": [
+        "pending-upgrades",
+        "check-upgrades"
+      ],
+      "binary": "/usr/bin/apt",
+      "fixed_args": [
+        "list",
+        "-u"
+      ],
+      "allow_extra_args": false,
+      "examples": []
+    },
+    "check network connections": {
+      "description": "This command will check the active network connections on the system and provide information about the established connections, listening ports, and associated processes.",
+      "aliases": [
+        "check-network-connections",
+        "network-connections"
+      ],
+      "binary": "/usr/bin/ss",
+      "fixed_args": [
+        "-u",
+        "-t",
+        "-l",
+        "-p"
+      ],
+      "allow_extra_args": false,
+      "examples": []
+    },
+    "ip addresses": {
+      "description": "List all IP addresses on the system",
+      "aliases": [
+        "interface status, ip addresses"
+      ],
+      "binary": "/usr/bin/ip",
+      "fixed_args": [
+        "a"
+      ],
+      "allow_extra_args": true,
+      "examples": []
+    }
+  }
+}

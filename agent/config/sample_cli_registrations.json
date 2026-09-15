@@ -1,0 +1,12 @@
+{
+  "commands": [
+    {
+      "command_name": "resolvectl status",
+      "description": "display the current DNS resolver status",
+      "binary": "/usr/bin/resolvectl",
+      "fixed_args": ["status"],
+      "aliases": ["dns status", "resolver status"],
+      "allow_extra_args": false 
+    }
+  ]
+}

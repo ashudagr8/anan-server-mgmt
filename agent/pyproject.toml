@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anan-ufw-agent"
+version = "0.1.0"
+description = "An MCP-driven UFW agent for Ollama-based tool conversation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [ { name = "Your Name" } ]
+
+[project.dependencies]
+fastmcp = "*"
+ollama = "*"
+httpx = "*"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+py-modules = ["anan_agent", "oauth", "hello", "test"]

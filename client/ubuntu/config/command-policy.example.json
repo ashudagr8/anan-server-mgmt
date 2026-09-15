@@ -1,0 +1,16 @@
+{
+  "allowlist": {},
+  "deny_binaries": [
+    "rm",
+    "mv",
+    "chmod",
+    "chown",
+    "systemctl",
+    "service",
+    "reboot",
+    "shutdown",
+    "iptables",
+    "nft",
+    "ufw"
+  ]
+}
